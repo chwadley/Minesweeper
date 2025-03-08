@@ -9,14 +9,17 @@
 	</head>
 	<body>
 		<header>
-			<h1>Header</h1>
+			<h1>Minesweeper</h1>
 		</header>
 			<section id="content">
-				<canvas id="Minesweeper" data-processing-sources="Minesweeper.pde">
+				<canvas id="Minesweeper" data-processing-sources="Minesweeper.pde bgparticle.pde button.pde explodeparticle.pde ring.pde">
 				</canvas>
 		    </section>
 	    <footer>
-		    Footer
+		    This might be the most amount of effort I've put into an assignment so far.
+		    <b>left click</b> = check a tile. You die if it is a mine, otherwise it tells you how many mines are around it. Tiles labeled 0 recursively light up tiles around them.
+		    <b>right click</b> = flag a tile. You must flag all of the mines correctly (and not flag the non-mine tiles) to win.
+		    Other instructions are explained in-game.
 	    </footer>
 	</body>
 </html>
