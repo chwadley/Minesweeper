@@ -64,7 +64,7 @@ public class button {
  
   public void register() {
     on=true;
-    setLabel(Integer.toString(nums[idx][idy]));
+    setLabel(""+nums[idx][idy]); //processing.js doesn't allow you to convert from Integer to String so I have to use this workaround. :(
     if (nums[idx][idy]==0) {
       registerAnother(idx-1,idy);
       registerAnother(idx,idy-1);
